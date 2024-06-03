@@ -211,7 +211,7 @@ a {
 	text-decoration: none;
 }
 
-main{
+main {
 	position: relative;
 }
 
@@ -220,7 +220,7 @@ section {
 	z-index: 50;
 }
 
-main img{
+main img {
 	object-fit: cover;
 }
 
@@ -524,6 +524,7 @@ footer .home img {
 	width: 50px;
 	height: 50px;
 }
+
 footer .home a {
 	color: #403531;
 	font-size: 2rem;
@@ -531,7 +532,7 @@ footer .home a {
 	align-items: center;
 }
 
-.footer-link{
+.footer-link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -558,13 +559,13 @@ footer .home a {
 	transition: all 0.35s;
 }
 
-.icon a:hover img{
+.icon a:hover img {
 	width: 35px;
 	height: 35px;
 }
 
 /* 動畫區 */
-.moving-text{
+.moving-text {
 	position: absolute;
 	top: 700px;
 	height: 6rem;
@@ -581,54 +582,105 @@ footer .home a {
 	width: 90%;
 	overflow-x: hidden;
 }
+
 .moving-text-box::-webkit-scrollbar {
 	display: none;
 }
 
-.moving-text-content{
+.moving-text-content {
 	position: absolute;
 	font-size: 5rem;
-	white-space:nowrap;
+	white-space: nowrap;
 	/* font-weight: 300; */
 	left: -50px;
 }
 
 /* product-content */
 
-#product-content{
+#product-content {
 	min-height: 100vh;
-	padding: 100px 10% 50px 10%;
+	padding: 100px 95px 50px 95px;
+	background-color: #F8F9FA;
 }
 
-.product-title{
+.product-title {
 	width: 100%;
 	padding-bottom: 20px;
-	border-bottom: #6c2911 2px solid;
+	/* border-bottom: #6c2911 2px solid; */
 	margin-bottom: 50px;
+	text-align: center;
+	font-size: 1.75rem;
+	font-weight: 600;
+}
+
+
+#product-content a {
+	font-weight: 600;
+	/* height: 500px; */
+	margin: 15px;
+	width: 31%;
 }
 
 
 
-.product-card{
-	font-weight: 600;
-	height: 500px;
-	width: 350px;
-	padding: 20px;
-	border-radius: 20px;
-	border: #8b6354 3px solid;
+.product-card {
+
 	display: flex;
 	flex-direction: column;
+	/* margin-bottom: 50px; */
+}
+
+.product-card figure {
+	width: 100%;
+	height: 60vh;
+	margin-bottom: 20px;
+	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	margin: 50px;
+	justify-content: center;
+	overflow: hidden;
+
 }
 
 .product-card img {
-	height: 250px;
-	width: 250px;
+	width: 100%;
+	height: 100%;
+	object-position: center;
+}
+
+.product-card figure:hover img{
+	animation: bigCard 100s linear ;
+}
+
+@keyframes bigCard {
+	0% {
+		width: 100%;
+		height: 100%;
+	}
+
+	5%{
+		width: 150%;
+		height: 150%;
+	}
+
+	100%{
+		width: 150%;
+		height: 150%;
+	}
 }
 
 .product-card h1 {
 	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
 	color: brown;
+}
+
+.product-card p {
+	color: #8D8F92;
+}
+
+.product-box{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }

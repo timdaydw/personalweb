@@ -2,6 +2,18 @@
 let temp = 0;
 let temp2 = -50;
 $(function () {
+    // $(".product-card figure").mouseenter(function () {
+    //     $(".product-card img").animate({
+    //         width: '150%',
+    //         height: '150%',
+    //     }), "slow";
+    // });
+    // $(".product-card figure").mouseleave(function () {
+    //     $(".product-card img").animate({
+    //         width: '100%',
+    //         height: '100%',
+    //     }), "slow";
+    // });
 
 
     //指定捲軸位置淡出淡入
@@ -38,7 +50,7 @@ $(function () {
             );
         }
 
-        if ( scrollPositionY > 2500) {
+        if (scrollPositionY > 2500) {
             $(".moving-text").stop().animate(
                 {
                     "top": (3850),
@@ -64,10 +76,10 @@ $(function () {
 
             $(".moving-text-content").stop().animate(
                 {
-                    "left": (temp2-(scrollPositionY-temp)/20),
+                    "left": (temp2 - (scrollPositionY - temp) / 20),
                 }
             );
-            temp2 = -50-(scrollPositionY);
+            temp2 = -50 - (scrollPositionY);
             temp = scrollPositionY;
         }
         if (scrollPositionY < temp) {
@@ -78,10 +90,10 @@ $(function () {
             );
             $(".moving-text-content").stop().animate(
                 {
-                    "left": (temp2+(temp-scrollPositionY)/10),
+                    "left": (temp2 + (temp - scrollPositionY) / 10),
                 }
             );
-            temp2 = temp2+(temp-scrollPositionY)/10;
+            temp2 = temp2 + (temp - scrollPositionY) / 10;
             temp = scrollPositionY;
         }
 
@@ -108,3 +120,11 @@ $('.smoove').smoove({
 //It also supports NodeList
 VanillaTilt.init(document.querySelectorAll(".vanilla"));
 // console.log(document.getElementById("about").offsetHeight);
+
+const btn = document.getElementById("output");
+btn.addEventListener("click", clickBtn);
+
+
+function clickBtn() {
+    window.alert("Thank you for your contact");
+}
