@@ -46,6 +46,15 @@ $(function () {
             );
         }
 
+        if (scrollPositionY == 0) {
+            $(".topbar").stop().animate(
+                {
+                    opacity: '1',
+                }
+            );
+
+        }
+
         if (scrollPositionY >= temp) {
             $(".topbar").stop().animate(
                 {

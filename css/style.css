@@ -244,20 +244,6 @@ main img{
 	opacity: 0;
 }
 
-.topbar-product {
-	width: 100%;
-	position: fixed;
-	color: #403531;
-	height: 70px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 19px;
-	background-color: #F8F9FA;
-	z-index: 99;
-	/* opacity: 0; */
-}
-
 .logo a {
 	color: #403531;
 	display: flex;
@@ -605,4 +591,8 @@ footer .home a {
 	white-space:nowrap;
 	/* font-weight: 300; */
 	left: -50px;
+}
+
+.product-content{
+	min-height: 100vh;
 }
