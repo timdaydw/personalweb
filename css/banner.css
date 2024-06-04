@@ -1,12 +1,28 @@
 #banner {
 	height: 100vh;
 	background: url(../image/banner-bg.jpg);
+	background-repeat: no-repeat;
 	background-position: top;
 	background-size:100%;
 	/* overflow: hidden; */
 	filter: drop-shadow(0 0 10px white);
 	animation: big 100s linear infinite;
 }
+
+
+/* RWD斷點 */
+
+/* 中型設備(平板) */
+@media (max-width:1025px) {
+	#banner {
+		animation: none;
+		background-size:cover;
+		background-position: center;
+	}
+}
+
+/* 小型設備(手機) */
+@media (max-width:640px) {}
 
 @keyframes big {
 	0% {
