@@ -498,6 +498,96 @@ button {
 	color: #403531;
 }
 
+/* carousel */
+
+#carousel {
+	height: 500px;
+	background-color: #EAE5DB;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel-box{
+	position: absolute;
+	left: 0;
+	display: flex;
+	width: auto;
+	height: 100%;
+	animation: carousel 50s ease-in-out infinite;
+}
+
+.carousel-box img {
+	width: 25vw;
+	object-fit: cover;
+	object-position: center;
+}
+
+@keyframes carousel {
+	0% {
+		left: 0;
+	}
+	9% {
+		left: 0;
+	}
+	10% {
+		left: -25vw;
+	}
+	19% {
+		left: -25vw;
+	}
+	20% {
+		left: -50vw;
+	}
+	29% {
+		left: -50vw;
+	}
+	30% {
+		left: -75vw;
+	}
+	39% {
+		left: -75vw;
+	}
+	40% {
+		left: -100vw;
+	}
+	49% {
+		left: -100vw;
+	}
+	50% {
+		left: -125vw;
+	}
+	59% {
+		left: -125vw;
+	}
+	60% {
+		left: -150vw;
+	}
+	69% {
+		left: -150vw;
+	}
+	70% {
+		left: -175vw;
+	}
+	79% {
+		left: -175vw;
+	}
+	80% {
+		left: -200vw;
+	}
+	89% {
+		left: -200vw;
+	}
+	90% {
+		left: -225vw;
+	}
+	99% {
+		left: -225vw;
+	}
+	100% {
+		left: -250vw;
+	}
+
+}
 
 /* footer */
 
@@ -579,7 +669,7 @@ footer .home a {
 .moving-text-box {
 	position: relative;
 	height: 100%;
-	width: 90%;
+	width: 70%;
 	overflow-x: hidden;
 }
 
@@ -591,7 +681,7 @@ footer .home a {
 	position: absolute;
 	font-size: 5rem;
 	white-space: nowrap;
-	/* font-weight: 300; */
+	font-weight: 300;
 	left: -50px;
 }
 
@@ -647,8 +737,8 @@ footer .home a {
 	object-position: center;
 }
 
-.product-card figure:hover img{
-	animation: bigCard 100s linear ;
+.product-card figure:hover img {
+	animation: bigCard 100s linear;
 }
 
 @keyframes bigCard {
@@ -657,12 +747,12 @@ footer .home a {
 		height: 100%;
 	}
 
-	5%{
+	5% {
 		width: 150%;
 		height: 150%;
 	}
 
-	100%{
+	100% {
 		width: 150%;
 		height: 150%;
 	}
@@ -679,8 +769,34 @@ footer .home a {
 	color: #8D8F92;
 }
 
-.product-box{
+.product-box {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+
+/* introduce */
+
+#introduce {
+	min-height: 100vh;
+	display: flex;
+}
+
+#introduce>div {
+	width: 50%;
+	height: 100vh;
+}
+
+.introduce-left {
+	background-color: #EAE5DB;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 0 10% 0 10%;
+}
+
+.introduce-right {
+	background-image: url(../image/introduce-card.jpg);
+	background-size: cover;
+	background-position: center;
 }

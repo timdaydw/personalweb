@@ -1,6 +1,8 @@
 // 滑動到指定位置
 let temp = 0;
 let temp2 = -50;
+
+let temp3 = 0;
 $(function () {
     // $(".product-card figure").mouseenter(function () {
     //     $(".product-card img").animate({
@@ -15,7 +17,6 @@ $(function () {
     //     }), "slow";
     // });
 
-
     //指定捲軸位置淡出淡入
     $(window).scroll(function () {
         var scrollPositionY = $(this).scrollTop();
@@ -26,37 +27,37 @@ $(function () {
 
 
 
-        if (scrollPositionY < 800) {
-            $(".moving-text").stop().animate(
-                {
-                    "top": (700),
-                }
-            );
-        }
+        // if (scrollPositionY < 800) {
+        //     $(".moving-text").stop().animate(
+        //         {
+        //             "top": (700),
+        //         }
+        //     );
+        // }
 
-        if (scrollPositionY < 1500 && scrollPositionY > 600) {
-            $(".moving-text").stop().animate(
-                {
-                    "top": (1000),
-                }
-            );
-        }
+        // if (scrollPositionY < 1500 && scrollPositionY > 600) {
+        //     $(".moving-text").stop().animate(
+        //         {
+        //             "top": (1000),
+        //         }
+        //     );
+        // }
 
-        if (scrollPositionY < 2500 && scrollPositionY > 1500) {
-            $(".moving-text").stop().animate(
-                {
-                    "top": (2500),
-                }
-            );
-        }
+        // if (scrollPositionY < 2500 && scrollPositionY > 1500) {
+        //     $(".moving-text").stop().animate(
+        //         {
+        //             "top": (2500),
+        //         }
+        //     );
+        // }
 
-        if (scrollPositionY > 2500) {
-            $(".moving-text").stop().animate(
-                {
-                    "top": (3850),
-                }
-            );
-        }
+        // if (scrollPositionY > 2500) {
+        //     $(".moving-text").stop().animate(
+        //         {
+        //             "top": (3850),
+        //         }
+        //     );
+        // }
 
         if (scrollPositionY == 0) {
             $(".topbar").stop().animate(
@@ -101,6 +102,8 @@ $(function () {
 
     });
 
+
+
 });
 
 // range.oninput = () =>
@@ -116,6 +119,11 @@ $('.smoove').smoove({
     offset: '-50%',
 });
 
+// $('.carousel-box').everyTime('1s', function () {
+//     $(".carousel-box").animate({
+//         "left": "-25vw",
+//     }), "slow";
+// });
 
 //It also supports NodeList
 VanillaTilt.init(document.querySelectorAll(".vanilla"));
