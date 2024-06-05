@@ -647,7 +647,7 @@ button {
 
 #carousel {
 	height: 500px;
-	background-color: #EAE5DB;
+	/* background-color: #EAE5DB; */
 	overflow: hidden;
 	position: relative;
 }

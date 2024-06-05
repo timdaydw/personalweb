@@ -96,7 +96,7 @@ $(function () {
             "color": "#6c2911",
         });
         $("#form-contact input,#form-contact textarea").css({
-            "background-color": "gba(108, 41, 17, 0.2)",
+            "background-color": "rgba(108, 41, 17, 0.2)",
         });
         $("#output").css({
             "background-color": "rgba(108, 41, 17, 0.2)",
@@ -107,6 +107,16 @@ $(function () {
         $(".topbar a").css({
             "color": "#403531",
         });
+        $(".topbar a").hover(function () {
+            $(this).css("color", "white");
+        }, function () {
+            $(this).css("color", "#403531");
+        });
+        // $(".topbar a").hover(function () {
+        //     $(this).css({
+        //         "color": "white",
+        //     })
+        // });
         $("footer").css({
             "background-color": "#403531",
         });
