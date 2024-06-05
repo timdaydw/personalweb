@@ -1007,13 +1007,21 @@ footer .home a {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	padding: 0 10% 0 10%;
+	padding: 0 10% 10px 10%;
 }
 
 .introduce-right {
 	background-image: url(../image/introduce-card.jpg);
 	background-size: cover;
 	background-position: center;
+}
+
+.introduce-2{
+	flex-direction: row-reverse;
+}
+
+.introduce-right-bg{
+	background-image: url(../image/introduce-card-2.jpg);
 }
 
 
