@@ -78,7 +78,7 @@ $(function () {
             "color": "#403531",
         });
         $(".link").css({
-            "border": "none",
+            "border": "#403531 1px solid",
         });
         $("section img").css({
             "border": "none",
