@@ -1030,6 +1030,22 @@ footer .home a {
 }
 
 
+/* lightdark-swicth */
+.lightdark-swicth {
+	position: fixed;
+	top: 80px;
+	right:20px;
+	z-index: 99;
+}
+
+.lightdark-swicth img {
+	cursor: pointer;
+}
+
+.dark {
+	display: none;
+}
+
 /* RWD斷點 */
 /* 大型設備(桌機) */
 @media (min-width:821px) {}

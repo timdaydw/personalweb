@@ -17,6 +17,95 @@ $(function () {
     //     }), "slow";
     // });
 
+    $(".light").click(function () {
+        $(".light").css({
+            "display": "none",
+        });
+        $(".dark").css({
+            "display": "block",
+        });
+        $("body").css({
+            "background-color": "#403531",
+        });
+        $(".title").css({
+            "color": "white",
+        });
+        $(".content").css({
+            "color": "white",
+        });
+        $(".link").css({
+            "border": "1px white solid",
+        });
+        $("section img").css({
+            "border": "0.1px white solid",
+        });
+        $("#contact form label").css({
+            "color": "white",
+        });
+        $("#form-contact input,#form-contact textarea").css({
+            "background-color": "white",
+        });
+        $("#output").css({
+            "background-color": "white",
+        });
+        $(".topbar").css({
+            "background-color": "#73615A",
+        });
+        $(".topbar a").css({
+            "color": "white",
+        });
+        $("footer").css({
+            "background-color": "#73615A",
+        });
+        $(".introduce-left").css({
+            "background-color": "#403531"
+        });
+    });
+    $(".dark").click(function () {
+        $(".dark").css({
+            "display": "none",
+        });
+        $(".light").css({
+            "display": "block",
+        });
+        $("body").css({
+            "background-color": "white",
+        });
+        $(".title").css({
+            "color": "#403531",
+        });
+        $(".content").css({
+            "color": "#403531",
+        });
+        $(".link").css({
+            "border": "none",
+        });
+        $("section img").css({
+            "border": "none",
+        });
+        $("#contact form label").css({
+            "color": "#6c2911",
+        });
+        $("#form-contact input,#form-contact textarea").css({
+            "background-color": "gba(108, 41, 17, 0.2)",
+        });
+        $("#output").css({
+            "background-color": "rgba(108, 41, 17, 0.2)",
+        });
+        $(".topbar").css({
+            "background-color": "#F8F9FA",
+        });
+        $(".topbar a").css({
+            "color": "#403531",
+        });
+        $("footer").css({
+            "background-color": "#403531",
+        });
+        $(".introduce-left").css({
+            "background-color": "#EAE5DB"
+        });
+    });
+
     //指定捲軸位置淡出淡入
     $(window).scroll(function () {
         var scrollPositionY = $(this).scrollTop();
@@ -24,8 +113,6 @@ $(function () {
         if (scrollPositionY > 50) {
             $("#banner").fadeOut();
         }
-
-
 
         // if (scrollPositionY < 800) {
         //     $(".moving-text").stop().animate(
@@ -131,6 +218,7 @@ VanillaTilt.init(document.querySelectorAll(".vanilla"));
 
 const btn = document.getElementById("output");
 btn.addEventListener("click", clickBtn);
+
 
 
 function clickBtn() {
