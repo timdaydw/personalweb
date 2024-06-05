@@ -326,6 +326,7 @@ header img {
 
 	.topbar {
 		padding: 5px;
+		justify-content: center;
 	}
 
 	.menu li a {
@@ -961,6 +962,32 @@ footer .home a {
 	flex-wrap: wrap;
 }
 
+
+/* RWD斷點 */
+/* 中型設備(平板) */
+@media (max-width:1500px) {
+	#product-content a {
+		width: 45%;
+	}
+}
+@media (max-width:830px) {
+	#product-content a {
+		width: 100%;
+		padding-bottom: 5px;
+		border-bottom: #8D8F92 0.5px solid;
+	}
+}
+
+/* 小型設備(手機) */
+@media (max-width:640px) {
+	#product-content {
+		min-height: 100vh;
+		padding: 100px 20px 50px 20px;
+		background-color: #F8F9FA;
+	}
+
+}
+
 /* introduce */
 
 #introduce {
@@ -985,6 +1012,21 @@ footer .home a {
 	background-image: url(../image/introduce-card.jpg);
 	background-size: cover;
 	background-position: center;
+}
+
+
+/* RWD斷點 */
+
+@media (max-width:1030px) {
+	#introduce {
+		flex-direction: column;
+	}
+	#introduce>div {
+		width: 100%;
+	}
+	.introduce-left{
+		justify-content: center;
+	}
 }
 
 
