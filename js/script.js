@@ -60,6 +60,15 @@ $(function () {
         $(".introduce-left").css({
             "background-color": "#403531"
         });
+        $("#product-content").css({
+            "background-color": "#403531"
+        });
+        $(".product-title").css({
+            "color": "#F8F9FA"
+        });
+        $(".product-card h1").css({
+            "color": "white"
+        });
     });
     $(".dark").click(function () {
         $(".dark").css({
@@ -103,6 +112,15 @@ $(function () {
         });
         $(".introduce-left").css({
             "background-color": "#EAE5DB"
+        });
+        $("#product-content").css({
+            "background-color": "#F8F9FA"
+        });
+        $(".product-title").css({
+            "color": "black"
+        });
+        $(".product-card h1").css({
+            "color": "brown"
         });
     });
 
