@@ -319,7 +319,9 @@ header img {
 	.logo {
 		display: none;
 	}
-
+	.menu-contact {
+		display: none;
+	}
 	.menu .home {
 		display: block;
 	}
