@@ -54,6 +54,16 @@ $(function () {
         $(".topbar a").css({
             "color": "white",
         });
+        $(".topbar a").hover(function () {
+            $(this).css("color", "white");
+        }, function () {
+            $(this).css("color", "white");
+        });
+        $(".logo a").hover(function () {
+            $(this).css("color", "white");
+        }, function () {
+            $(this).css("color", "white");
+        });
         $("footer").css({
             "background-color": "#73615A",
         });
