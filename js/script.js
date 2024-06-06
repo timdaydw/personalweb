@@ -158,7 +158,23 @@ $(function () {
                 }
             );
         }
-        
+        if (scrollPositionY > 70 && scrollPositionY < 800) {
+            $(".bg-rotate-2").stop().animate(
+                {
+                    "bottom": (-100+scrollPositionY),
+                    "rotate": (264-scrollPositionY/10)+"deg",
+                }
+            );
+        }
+        if (scrollPositionY > 70 && scrollPositionY < 800) {
+            $(".bg-rotate-1").stop().animate(
+                {
+                    "top": (0+scrollPositionY),
+                    "rotate": (30-scrollPositionY/10)+"deg",
+                }
+            );
+        }
+
         // if (scrollPositionY < 800) {
         //     $(".moving-text").stop().animate(
         //         {
