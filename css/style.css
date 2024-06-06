@@ -374,7 +374,7 @@ header img {
 #explain,
 #news {
 	z-index: 1;
-	/* position: relative; */
+	position: relative;
 	margin: auto;
 	height: 800px;
 	width: 90%;
@@ -423,29 +423,53 @@ header img {
 
 .bg-rotate{
 	position: absolute;
+	z-index: 0;
 
 }
 
 .bg-rotate-1{
-	z-index: 0;
 	right: -100px;
-	animation: bg-rotate 20s linear infinite;
+	/* animation: bg-rotate 20s linear infinite; */
+	rotate: 30deg;
 }
 .bg-rotate-2{
-	z-index: 0;
 	left: -100px;
 	bottom: -100px;
-	animation: bg-rotate 15s linear infinite;
+	rotate: 264deg;
+	/* animation: bg-rotate 15s linear infinite; */
 }
 
-@keyframes bg-rotate{
+.bg-rotate-3{
+	left: 50%;
+	bottom: 50%;
+	rotate: 60deg;
+}
+.bg-rotate-4{
+	left: 40%;
+	top: 0;
+	rotate: 75deg;
+}
+
+.bg-rotate-5{
+	right: 0;
+	top: 0;
+	rotate: 65deg;
+}
+
+@media (max-width:863px){
+	.bg-rotate{
+		display: none;
+	}
+}
+
+/* @keyframes bg-rotate{
 	0%{
 		rotate: 0deg;
 	}
 	100%{
 		rotate: 359deg;
 	}
-}
+} */
 
 
 /* RWD斷點 */
@@ -545,6 +569,7 @@ header img {
 }
 
 .explain-left {
+	z-index: 1;
 	height: 100%;
 }
 
