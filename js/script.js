@@ -4,19 +4,6 @@ let temp2 = -50;
 
 let temp3 = 0;
 $(function () {
-    // $(".product-card figure").mouseenter(function () {
-    //     $(".product-card img").animate({
-    //         width: '150%',
-    //         height: '150%',
-    //     }), "slow";
-    // });
-    // $(".product-card figure").mouseleave(function () {
-    //     $(".product-card img").animate({
-    //         width: '100%',
-    //         height: '100%',
-    //     }), "slow";
-    // });
-
     $(".light").click(function () {
         $(".light").css({
             "display": "none",
@@ -144,67 +131,12 @@ $(function () {
         });
     });
 
-    //指定捲軸位置淡出淡入
     $(window).scroll(function () {
         var scrollPositionY = $(this).scrollTop();
 
         if (scrollPositionY > 50) {
             $("#banner").fadeOut();
         }
-        // if (scrollPositionY > 70 && scrollPositionY < 800) {
-        //     $(".about-left-img img ").stop().animate(
-        //         {
-        //             "top": (0-scrollPositionY/10),
-        //         }
-        //     );
-        // }
-        // if (scrollPositionY > 70 && scrollPositionY < 800) {
-        //     $(".bg-rotate-2").stop().animate(
-        //         {
-        //             "bottom": (-100+scrollPositionY),
-        //             "rotate": (264-scrollPositionY/10)+"deg",
-        //         }
-        //     );
-        // }
-        // if (scrollPositionY > 70 && scrollPositionY < 800) {
-        //     $(".bg-rotate-1").stop().animate(
-        //         {
-        //             "top": (0+scrollPositionY),
-        //             "rotate": (30-scrollPositionY/10)+"deg",
-        //         }
-        //     );
-        // }
-        // if (scrollPositionY > (document.querySelector("#product").offsetTop-400) && scrollPositionY < (document.querySelector("#explain").offsetTop+200) ) {
-        //     $(".bg-rotate-3").stop().animate(
-        //         {
-        //             "left": (800-scrollPositionY/5)+"px",
-        //             "rotate": (60-scrollPositionY/10)+"deg",
-        //         }
-        //     );
-        // }
-        // if (scrollPositionY > (document.querySelector("#explain").offsetTop) && scrollPositionY < (document.querySelector("#news").offsetTop) ) {
-        //     $(".bg-rotate-4").stop().animate(
-        //         {
-        //             "top": (100+scrollPositionY-document.querySelector("#explain").offsetTop),
-        //             "rotate": (75-scrollPositionY/10)+"deg",
-        //         }
-        //     );
-        // }
-
-        // if (scrollPositionY < (document.querySelector("#news").offsetTop-200) || scrollPositionY > (document.querySelector("#contact").offsetTop) ) {
-        //     $(".bg-rotate-5").stop().animate(
-        //         {
-        //             "right": (-100),
-        //         }
-        //     );
-        // }else {
-        //     $(".bg-rotate-5").stop().animate(
-        //         {
-        //             "right": (2000),
-        //         }
-        //     );
-        // }
-
         // if (scrollPositionY < 800) {
         //     $(".moving-text").stop().animate(
         //         {

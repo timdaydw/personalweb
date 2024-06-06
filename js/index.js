@@ -1,5 +1,4 @@
 $(function () {
-    //指定捲軸位置淡出淡入
     $(window).scroll(function () {
         var scrollPositionY = $(this).scrollTop();
         if (scrollPositionY > 0 && scrollPositionY < $("#about").outerHeight()) {
