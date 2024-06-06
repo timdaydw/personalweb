@@ -25,7 +25,7 @@ $(function () {
             "display": "block",
         });
         $("body").css({
-            "background-color": "#403531",
+            "background-color": "#3b312d",
         });
         $(".title").css({
             "color": "white",
@@ -58,13 +58,13 @@ $(function () {
             "background-color": "#73615A",
         });
         $(".introduce-left").css({
-            "background-color": "#403531"
+            "background-color": "#3b312d"
         });
         $("#product-content").css({
-            "background-color": "#403531"
+            "background-color": "#3b312d"
         });
         $(".product-title").css({
-            "color": "#F8F9FA"
+            "color": "#f0f0f0"
         });
         $(".product-card h1").css({
             "color": "white"
@@ -81,13 +81,13 @@ $(function () {
             "background-color": "white",
         });
         $(".title").css({
-            "color": "#403531",
+            "color": "#3b312d",
         });
         $(".content").css({
-            "color": "#403531",
+            "color": "#3b312d",
         });
         $(".link").css({
-            "border": "#403531 1px solid",
+            "border": "#3b312d 1px solid",
         });
         $("section img").css({
             "border": "none",
@@ -102,15 +102,15 @@ $(function () {
             "background-color": "rgba(108, 41, 17, 0.2)",
         });
         $(".topbar").css({
-            "background-color": "#F8F9FA",
+            "background-color": "#f0f0f0",
         });
         $(".topbar a").css({
-            "color": "#403531",
+            "color": "#3b312d",
         });
         $(".topbar a").hover(function () {
             $(this).css("color", "white");
         }, function () {
-            $(this).css("color", "#403531");
+            $(this).css("color", "#3b312d");
         });
         // $(".topbar a").hover(function () {
         //     $(this).css({
@@ -118,13 +118,13 @@ $(function () {
         //     })
         // });
         $("footer").css({
-            "background-color": "#403531",
+            "background-color": "#3b312d",
         });
         $(".introduce-left").css({
             "background-color": "#EAE5DB"
         });
         $("#product-content").css({
-            "background-color": "#F8F9FA"
+            "background-color": "#f0f0f0"
         });
         $(".product-title").css({
             "color": "black"
