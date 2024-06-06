@@ -453,13 +453,13 @@ header img {
 }
 
 .bg-rotate-3{
-	left: 50%;
+	left: 800px;
 	bottom: 50%;
 	rotate: 60deg;
 }
 .bg-rotate-4{
 	left: 40%;
-	top: 0;
+	top: 100px;
 	rotate: 75deg;
 }
 
