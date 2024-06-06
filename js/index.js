@@ -2,14 +2,14 @@ $(function () {
     //指定捲軸位置淡出淡入
     $(window).scroll(function () {
         var scrollPositionY = $(this).scrollTop();
-        if (scrollPositionY > 70 && scrollPositionY < 800) {
+        if (scrollPositionY > 0 && scrollPositionY < $("#about").outerHeight()) {
             $(".about-left-img img ").stop().animate(
                 {
                     "top": (0-scrollPositionY/10),
                 }
             );
         }
-        if (scrollPositionY > 70 && scrollPositionY < 800) {
+        if (scrollPositionY > 0 && scrollPositionY < $("#about").outerHeight()) {
             $(".bg-rotate-2").stop().animate(
                 {
                     "bottom": (-100+scrollPositionY),
@@ -17,7 +17,7 @@ $(function () {
                 }
             );
         }
-        if (scrollPositionY > 70 && scrollPositionY < 800) {
+        if (scrollPositionY > 0 && scrollPositionY < $("#about").outerHeight()) {
             $(".bg-rotate-1").stop().animate(
                 {
                     "top": (0+scrollPositionY),
