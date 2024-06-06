@@ -158,13 +158,14 @@ $(function () {
                 }
             );
         }
-        if (scrollPositionY < 800) {
-            $(".moving-text").stop().animate(
-                {
-                    "top": (700),
-                }
-            );
-        }
+        
+        // if (scrollPositionY < 800) {
+        //     $(".moving-text").stop().animate(
+        //         {
+        //             "top": (700),
+        //         }
+        //     );
+        // }
 
         // if (scrollPositionY < 1500 && scrollPositionY > 600) {
         //     $(".moving-text").stop().animate(
