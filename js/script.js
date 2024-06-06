@@ -112,11 +112,11 @@ $(function () {
         }, function () {
             $(this).css("color", "#3b312d");
         });
-        // $(".topbar a").hover(function () {
-        //     $(this).css({
-        //         "color": "white",
-        //     })
-        // });
+        $(".logo a").hover(function () {
+            $(this).css("color", "#3b312d");
+        }, function () {
+            $(this).css("color", "#3b312d");
+        });
         $("footer").css({
             "background-color": "#3b312d",
         });
