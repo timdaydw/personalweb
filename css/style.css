@@ -373,6 +373,8 @@ header img {
 #product,
 #explain,
 #news {
+	z-index: 1;
+	/* position: relative; */
 	margin: auto;
 	height: 800px;
 	width: 90%;
@@ -389,6 +391,7 @@ header img {
 
 .about-left,
 .explain-right {
+	z-index: 1;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -403,6 +406,7 @@ header img {
 .about-right,
 .product-left,
 .news-left {
+	z-index: 1;
 	display: flex;
 	align-items: center;
 }
@@ -412,8 +416,35 @@ header img {
 .explain-right-box,
 .news-left-box,
 .news-right {
+	z-index: 1;
 	width: 80%;
 	padding: 95px;
+}
+
+.bg-rotate{
+	position: absolute;
+
+}
+
+.bg-rotate-1{
+	z-index: 0;
+	right: -100px;
+	animation: bg-rotate 20s linear infinite;
+}
+.bg-rotate-2{
+	z-index: 0;
+	left: -100px;
+	bottom: -100px;
+	animation: bg-rotate 15s linear infinite;
+}
+
+@keyframes bg-rotate{
+	0%{
+		rotate: 0deg;
+	}
+	100%{
+		rotate: 359deg;
+	}
 }
 
 
@@ -494,6 +525,7 @@ header img {
 }
 
 .product-right {
+	z-index: 1;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
