@@ -907,6 +907,9 @@ footer .home a {
 	display: flex;
 	flex-direction: column;
 	/* margin-bottom: 50px; */
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+	transform: translateZ(20px)
 }
 
 .product-card figure {

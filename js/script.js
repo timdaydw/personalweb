@@ -231,33 +231,23 @@ $(function () {
 
 });
 
-// range.oninput = () =>
-//     document.body.style.setProperty('--pos', range.value + '%');
+VanillaTilt.init(document.querySelector(".product-card"), {
+    max: 25,
+    speed: 400
+});
 
-
-// VanillaTilt.init(document.querySelector(".vanilla"), {
-//     max: 25,
-//     speed: 400
-// });
+//It also supports NodeList
+VanillaTilt.init(document.querySelectorAll(".product-card"));
 
 $('.smoove').smoove({
     offset: '-50%',
 });
 
-// $('.carousel-box').everyTime('1s', function () {
-//     $(".carousel-box").animate({
-//         "left": "-25vw",
-//     }), "slow";
-// });
 
-//It also supports NodeList
-VanillaTilt.init(document.querySelectorAll(".vanilla"));
-// console.log(document.getElementById("about").offsetHeight);
+
 
 const btn = document.getElementById("output");
 btn.addEventListener("click", clickBtn);
-
-
 
 function clickBtn() {
     window.alert("Thank you for your contact");
