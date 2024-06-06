@@ -403,6 +403,19 @@ header img {
 	height: 90%;
 }
 
+.about-left-img{
+	position: relative;
+	width: 60%;
+	height: 90%;
+	overflow: hidden;
+}
+
+.about-left-img img {
+	position: absolute;
+	width: 150%;
+	height: auto;
+}
+
 .about-right,
 .product-left,
 .news-left {
@@ -475,41 +488,6 @@ header img {
 /* RWD斷點 */
 /* 大型設備(桌機) */
 /* 中型設備(平板) */
-@media (max-width:1030px) {
-
-	#about,
-	#product,
-	#explain,
-	#news {
-		/* flex-direction: column;
-		width: 100%; */
-		height: auto;
-	}
-
-	/* #about>div,
-	#product>div,
-	#explain>div,
-	#news>div {
-		width: 100%;
-	} */
-
-	#about img,
-	#product img,
-	#explain img,
-	#news img {
-		height: 50vh;
-	}
-
-	.about-right-box,
-	.product-left-box,
-	.explain-right-box,
-	.news-left-box,
-	.news-right {
-		width: 100%;
-		padding: 10px;
-	}
-}
-
 @media (max-width:1250px) {
 
 	#about,
@@ -538,6 +516,45 @@ header img {
 		padding: 10px;
 	}
 }
+
+@media (max-width:1030px) {
+
+	#about,
+	#product,
+	#explain,
+	#news {
+		/* flex-direction: column;
+		width: 100%; */
+		height: auto;
+	}
+
+	/* #about>div,
+	#product>div,
+	#explain>div,
+	#news>div {
+		width: 100%;
+	} */
+
+	/* #about img, */
+	#product img,
+	#explain img,
+	#news img {
+		height: 50vh;
+	}
+
+	.about-right-box,
+	.product-left-box,
+	.explain-right-box,
+	.news-left-box,
+	.news-right {
+		width: 100%;
+		padding: 10px;
+	}
+	.about-left {
+		height: auto;
+	}
+}
+
 
 /* 小型設備(手機) */
 @media (max-width:640px) {}

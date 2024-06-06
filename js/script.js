@@ -151,14 +151,20 @@ $(function () {
         if (scrollPositionY > 50) {
             $("#banner").fadeOut();
         }
-
-        // if (scrollPositionY < 800) {
-        //     $(".moving-text").stop().animate(
-        //         {
-        //             "top": (700),
-        //         }
-        //     );
-        // }
+        if (scrollPositionY > 70 && scrollPositionY < 800) {
+            $(".about-left-img img ").stop().animate(
+                {
+                    "top": (0-scrollPositionY/10),
+                }
+            );
+        }
+        if (scrollPositionY < 800) {
+            $(".moving-text").stop().animate(
+                {
+                    "top": (700),
+                }
+            );
+        }
 
         // if (scrollPositionY < 1500 && scrollPositionY > 600) {
         //     $(".moving-text").stop().animate(
