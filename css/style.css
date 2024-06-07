@@ -261,6 +261,12 @@ main img {
 	display: none;
 }
 
+.menu img {
+	height: auto;
+	width: auto;
+	margin-right: 3px;
+}
+
 
 .menu a {
 	padding: 5px 10px;
@@ -268,6 +274,8 @@ main img {
 	color: #3b312d;
 	font-weight: 700;
 	transition: all 0.35s;
+	display: flex;
+	align-items: center;
 }
 
 .menu a:hover {
@@ -315,16 +323,22 @@ header img {
 @media (min-width:821px) {}
 
 /* 中型設備(平板) */
-@media (max-width:910px) {
+@media (max-width:1050px) {
 
 	.menu li {
 		margin: 2px;
 	}
 
-	.logo a p {
+	.logo a p{
 		display: none;
 	}
 
+}
+@media (max-width:770px){
+
+	.menu a img {
+		display: none;
+	}
 }
 
 /* 小型設備(手機) */
