@@ -1124,15 +1124,11 @@ footer .home a {
 
 
 /* lightdark-swicth */
-.lightdark-swicth {
-	position: fixed;
-	top: 80px;
-	right:20px;
-	z-index: 70;
-}
 
 .lightdark-swicth img {
 	cursor: pointer;
+	height: auto;
+	width: auto;
 }
 
 .dark {
