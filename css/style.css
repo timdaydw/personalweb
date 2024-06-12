@@ -1162,6 +1162,11 @@ footer .home a {
 	border-radius: 50%;
 	/* -webkit-backface-visibility:hidden; */
 }
+@media (max-width:640px) {
+	#mouseFollow{
+		display: none;
+	}
+}
 
 
 /* RWD斷點 */
