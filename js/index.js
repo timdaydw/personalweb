@@ -73,6 +73,16 @@ $(function () {
             temp4 = scrollPositionY2;
         }
     });
+
+    $(".link").hover(function () {
+        $("#mouseFollow").css({
+            background: "#EAE5DB"
+        });
+    }, function () {
+        $("#mouseFollow").css({
+            background: "none"
+        });
+    });
 });
 
 
