@@ -72,6 +72,9 @@ $(function () {
             }
             temp4 = scrollPositionY2;
         }
+        if (scrollPositionY2 < temp4){
+            temp4 = scrollPositionY2;
+        }
     });
 
     $(".link").hover(function () {
