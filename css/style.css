@@ -211,7 +211,7 @@ a {
 	text-decoration: none;
 }
 
-main {
+main,footer,header,body {
 	position: relative;
 }
 
@@ -1150,6 +1150,18 @@ footer .home a {
 }
 
 
+#mouseFollow{
+	position: absolute;
+	width: 30px; 
+	height: 30px;
+	border: #EAE5DB solid 1px;
+	/* top: 50%; 
+	left: 50%; */
+	margin: -15px 0 0 -15px;
+	/* background: tomato; */
+	border-radius: 50%;
+	/* -webkit-backface-visibility:hidden; */
+}
 
 
 /* RWD斷點 */

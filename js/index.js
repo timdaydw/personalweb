@@ -84,3 +84,12 @@ btn.addEventListener("click", clickBtn);
 function clickBtn() {
     window.alert("Thank you for your contact");
 }
+
+var $box = $("#mouseFollow");
+function moveBox(e) {
+  TweenMax.to($box, 1.8, {
+    css: { left: e.pageX, top: e.pageY },
+    ease: Elastic.easeOut
+  });
+}
+$(window).on("mousemove", moveBox);
