@@ -66,6 +66,66 @@ $(function () {
         $(".product-card h1").css({
             "color": "white"
         });
+        $(".img-about img").attr({
+            "src": "./image/icon-about-hover.png"
+        });
+        $(".img-product img").attr({
+            "src": "./image/icon-product-hover.png"
+        });
+        $(".img-instruction img").attr({
+            "src": "./image/icon-instruction-hover.png"
+        });
+        $(".img-news img").attr({
+            "src": "./image/icon-news-hover.png"
+        });
+        $(".img-contact img").attr({
+            "src": "./image/icon-contact-hover.png"
+        });
+        $(".img-about").hover(function () {
+            $(".img-about img").attr({
+                "src": "./image/icon-about-hover.png"
+            });
+        }, function () {
+            $(".img-about img").attr({
+                "src": "./image/icon-about-hover.png"
+            });
+        });
+        $(".img-product").hover(function () {
+            $(".img-product img").attr({
+                "src": "./image/icon-product-hover.png"
+            });
+        }, function () {
+            $(".img-product img").attr({
+                "src": "./image/icon-product-hover.png"
+            });
+        });
+        $(".img-instruction").hover(function () {
+            $(".img-instruction img").attr({
+                "src": "./image/icon-instruction-hover.png"
+            });
+        }, function () {
+            $(".img-instruction img").attr({
+                "src": "./image/icon-instruction-hover.png"
+            });
+        });
+        $(".img-news").hover(function () {
+            $(".img-news img").attr({
+                "src": "./image/icon-news-hover.png"
+            });
+        }, function () {
+            $(".img-news img").attr({
+                "src": "./image/icon-news-hover.png"
+            });
+        });
+        $(".img-contact").hover(function () {
+            $(".img-contact img").attr({
+                "src": "./image/icon-contact-hover.png"
+            });
+        }, function () {
+            $(".img-contact img").attr({
+                "src": "./image/icon-contact-hover.png"
+            });
+        });
     });
     $(".dark").click(function () {
         $(".dark").css({
@@ -128,6 +188,66 @@ $(function () {
         });
         $(".product-card h1").css({
             "color": "brown"
+        });
+        $(".img-about img").attr({
+            "src": "./image/icon-about.png"
+        });
+        $(".img-product img").attr({
+            "src": "./image/icon-product.png"
+        });
+        $(".img-instruction img").attr({
+            "src": "./image/icon-instruction.png"
+        });
+        $(".img-news img").attr({
+            "src": "./image/icon-news.png"
+        });
+        $(".img-contact img").attr({
+            "src": "./image/icon-contact.png"
+        });
+        $(".img-about").hover(function () {
+            $(".img-about img").attr({
+                "src": "./image/icon-about-hover.png"
+            });
+        }, function () {
+            $(".img-about img").attr({
+                "src": "./image/icon-about.png"
+            });
+        });
+        $(".img-product").hover(function () {
+            $(".img-product img").attr({
+                "src": "./image/icon-product-hover.png"
+            });
+        }, function () {
+            $(".img-product img").attr({
+                "src": "./image/icon-product.png"
+            });
+        });
+        $(".img-instruction").hover(function () {
+            $(".img-instruction img").attr({
+                "src": "./image/icon-instruction-hover.png"
+            });
+        }, function () {
+            $(".img-instruction img").attr({
+                "src": "./image/icon-instruction.png"
+            });
+        });
+        $(".img-news").hover(function () {
+            $(".img-news img").attr({
+                "src": "./image/icon-news-hover.png"
+            });
+        }, function () {
+            $(".img-news img").attr({
+                "src": "./image/icon-news.png"
+            });
+        });
+        $(".img-contact").hover(function () {
+            $(".img-contact img").attr({
+                "src": "./image/icon-contact-hover.png"
+            });
+        }, function () {
+            $(".img-contact img").attr({
+                "src": "./image/icon-contact.png"
+            });
         });
     });
 
@@ -210,8 +330,51 @@ $(function () {
 
     });
 
-
-
+    $(".img-about").hover(function () {
+        $(".img-about img").attr({
+            "src": "./image/icon-about-hover.png"
+        });
+    }, function () {
+        $(".img-about img").attr({
+            "src": "./image/icon-about.png"
+        });
+    });
+    $(".img-product").hover(function () {
+        $(".img-product img").attr({
+            "src": "./image/icon-product-hover.png"
+        });
+    }, function () {
+        $(".img-product img").attr({
+            "src": "./image/icon-product.png"
+        });
+    });
+    $(".img-instruction").hover(function () {
+        $(".img-instruction img").attr({
+            "src": "./image/icon-instruction-hover.png"
+        });
+    }, function () {
+        $(".img-instruction img").attr({
+            "src": "./image/icon-instruction.png"
+        });
+    });
+    $(".img-news").hover(function () {
+        $(".img-news img").attr({
+            "src": "./image/icon-news-hover.png"
+        });
+    }, function () {
+        $(".img-news img").attr({
+            "src": "./image/icon-news.png"
+        });
+    });
+    $(".img-contact").hover(function () {
+        $(".img-contact img").attr({
+            "src": "./image/icon-contact-hover.png"
+        });
+    }, function () {
+        $(".img-contact img").attr({
+            "src": "./image/icon-contact.png"
+        });
+    });
 });
 
 VanillaTilt.init(document.querySelector(".product-card"), {
