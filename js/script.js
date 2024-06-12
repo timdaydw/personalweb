@@ -364,9 +364,9 @@ VanillaTilt.init(document.querySelector(".product-card"), {
 //It also supports NodeList
 VanillaTilt.init(document.querySelectorAll(".product-card"));
 
-$('.smoove').smoove({
-    offset: '-50%',
-});
+// $('.smoove').smoove({
+//     offset: '-50%',
+// });
 
 
 
