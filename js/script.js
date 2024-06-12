@@ -257,30 +257,6 @@ $(function () {
         if (scrollPositionY > 50) {
             $("#banner").fadeOut();
         }
-        // if (scrollPositionY < 800) {
-        //     $(".moving-text").stop().animate(
-        //         {
-        //             "top": (700),
-        //         }
-        //     );
-        // }
-
-        // if (scrollPositionY < 1500 && scrollPositionY > 600) {
-        //     $(".moving-text").stop().animate(
-        //         {
-        //             "top": (1000),
-        //         }
-        //     );
-        // }
-
-        // if (scrollPositionY < 2500 && scrollPositionY > 1500) {
-        //     $(".moving-text").stop().animate(
-        //         {
-        //             "top": (2500),
-        //         }
-        //     );
-        // }
-
         // if (scrollPositionY > 2500) {
         //     $(".moving-text").stop().animate(
         //         {
@@ -288,7 +264,7 @@ $(function () {
         //         }
         //     );
         // }
-
+        
         if (scrollPositionY == 0) {
             $(".topbar").stop().animate(
                 {
@@ -303,11 +279,19 @@ $(function () {
                     opacity: '0',
                 }
             );
-            // $(".moving-text-content").stop().animate(
-            //     {
-            //         "left": (temp2 - (scrollPositionY - temp) / 20),
-            //     }
-            // );
+            if (scrollPositionY > (document.querySelector("#product").offsetTop)/2 && scrollPositionY < document.querySelector("#product").offsetTop-50){
+                $('html,body').stop().animate({scrollTop:document.querySelector("#product").offsetTop-50},50)
+            }
+            if (scrollPositionY > ((document.querySelector("#explain").offsetTop-document.querySelector("#product").offsetTop)/2+document.querySelector("#product").offsetTop) && scrollPositionY < document.querySelector("#explain").offsetTop-50){
+                $('html,body').stop().animate({scrollTop:document.querySelector("#explain").offsetTop-50},50)
+            }
+            if (scrollPositionY > ((document.querySelector("#news").offsetTop-document.querySelector("#explain").offsetTop)/2+document.querySelector("#explain").offsetTop) && scrollPositionY < document.querySelector("#news").offsetTop-50){
+                $('html,body').stop().animate({scrollTop:document.querySelector("#news").offsetTop-50},50)
+            }
+            if (scrollPositionY > ((document.querySelector("#contact").offsetTop-document.querySelector("#news").offsetTop)/2+document.querySelector("#news").offsetTop) && scrollPositionY < document.querySelector("#contact").offsetTop-50){
+                $('html,body').stop().animate({scrollTop:document.querySelector("#contact").offsetTop-50},50)
+            }
+
             temp2 = -50 - (scrollPositionY);
             temp = scrollPositionY;
         }
@@ -317,17 +301,12 @@ $(function () {
                     opacity: '1',
                 }
             );
-            // $(".moving-text-content").stop().animate(
-            //     {
-            //         "left": (temp2 + (temp - scrollPositionY) / 10),
-            //     }
-            // );
+            // if (scrollPositionY >= (document.querySelector("#product").offsetTop)/2 && scrollPositionY < ((document.querySelector("#explain").offsetTop-document.querySelector("#product").offsetTop)/2+document.querySelector("#product").offsetTop)){
+            //     $('html,body').stop().animate({scrollTop:document.querySelector("#about").offsetTop+70},50)
+            // }
             temp2 = temp2 + (temp - scrollPositionY) / 10;
             temp = scrollPositionY;
         }
-
-
-
     });
 
     $(".img-about").hover(function () {
@@ -388,6 +367,8 @@ VanillaTilt.init(document.querySelectorAll(".product-card"));
 $('.smoove').smoove({
     offset: '-50%',
 });
+
+
 
 
 
