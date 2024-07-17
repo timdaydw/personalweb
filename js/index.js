@@ -57,24 +57,24 @@ $(function () {
             );
         }
 
-        if (scrollPositionY2 >= temp4) {
-            if (scrollPositionY2 > (document.querySelector("#product").offsetTop)/2 && scrollPositionY2 < document.querySelector("#product").offsetTop-50){
-                $('html,body').stop().animate({scrollTop:document.querySelector("#product").offsetTop-50},50)
-            }
-            if (scrollPositionY2 > ((document.querySelector("#explain").offsetTop-document.querySelector("#product").offsetTop)/2+document.querySelector("#product").offsetTop) && scrollPositionY2 < document.querySelector("#explain").offsetTop-50){
-                $('html,body').stop().animate({scrollTop:document.querySelector("#explain").offsetTop-50},50)
-            }
-            if (scrollPositionY2 > ((document.querySelector("#news").offsetTop-document.querySelector("#explain").offsetTop)/2+document.querySelector("#explain").offsetTop) && scrollPositionY2 < document.querySelector("#news").offsetTop-50){
-                $('html,body').stop().animate({scrollTop:document.querySelector("#news").offsetTop-50},50)
-            }
-            if (scrollPositionY2 > ((document.querySelector("#contact").offsetTop-document.querySelector("#news").offsetTop)/2+document.querySelector("#news").offsetTop) && scrollPositionY2 < document.querySelector("#contact").offsetTop-50){
-                $('html,body').stop().animate({scrollTop:document.querySelector("#contact").offsetTop-50},50)
-            }
-            temp4 = scrollPositionY2;
-        }
-        if (scrollPositionY2 < temp4){
-            temp4 = scrollPositionY2;
-        }
+        // if (scrollPositionY2 >= temp4) {
+        //     if (scrollPositionY2 > (document.querySelector("#product").offsetTop)/2 && scrollPositionY2 < document.querySelector("#product").offsetTop-50){
+        //         $('html,body').stop().animate({scrollTop:document.querySelector("#product").offsetTop-50},50)
+        //     }
+        //     if (scrollPositionY2 > ((document.querySelector("#explain").offsetTop-document.querySelector("#product").offsetTop)/2+document.querySelector("#product").offsetTop) && scrollPositionY2 < document.querySelector("#explain").offsetTop-50){
+        //         $('html,body').stop().animate({scrollTop:document.querySelector("#explain").offsetTop-50},50)
+        //     }
+        //     if (scrollPositionY2 > ((document.querySelector("#news").offsetTop-document.querySelector("#explain").offsetTop)/2+document.querySelector("#explain").offsetTop) && scrollPositionY2 < document.querySelector("#news").offsetTop-50){
+        //         $('html,body').stop().animate({scrollTop:document.querySelector("#news").offsetTop-50},50)
+        //     }
+        //     if (scrollPositionY2 > ((document.querySelector("#contact").offsetTop-document.querySelector("#news").offsetTop)/2+document.querySelector("#news").offsetTop) && scrollPositionY2 < document.querySelector("#contact").offsetTop-50){
+        //         $('html,body').stop().animate({scrollTop:document.querySelector("#contact").offsetTop-50},50)
+        //     }
+        //     temp4 = scrollPositionY2;
+        // }
+        // if (scrollPositionY2 < temp4){
+        //     temp4 = scrollPositionY2;
+        // }
     });
 
     $(".link").hover(function () {
